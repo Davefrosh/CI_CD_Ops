@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   first_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Display message
         run: echo "Hello, World!"
