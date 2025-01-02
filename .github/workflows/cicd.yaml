@@ -2,11 +2,10 @@ name: first_workflow
 on: workflow_dispatch
 
 jobs:
+  first_job:
     runs_on: ubuntu-latest
     steps:
-        - name: using git
-        - run: echo "Hello, World!"
-
-        - name: using git again
-        - run: echo "Hello, David the man!"
-
+      - name: Step 1 - Display message
+        run: echo "Hello, World!"
+      - name: Step 2 - Display another message
+        run: echo "Hello, David the man!"
